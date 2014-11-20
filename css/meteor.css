@@ -1,0 +1,108 @@
+.meteorbox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.meteorbox .staritem {
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background: url(images/meteor.png);
+    -webkit-animation: star .5s linear infinite
+}
+
+.meteorbox .staritem.style1 {
+    width: 10px;
+    height: 10px;
+    background-position: 0 -68px
+}
+
+.meteorbox .staritem.style2 {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -68px
+}
+
+.meteorbox .staritem.style3 {
+    width: 21px;
+    height: 21px;
+    background-position: -31px -68px
+}
+
+.meteorbox .staritem.style4 {
+    width: 25px;
+    height: 25px;
+    background-position: -52px -68px
+}
+
+.meteorbox .meteoritem {
+    display: block;
+    position: absolute;
+    width: 125px;
+    height: 25px;
+    background: url(images/meteor.png);
+    -webkit-animation: meteor .5s linear infinite
+}
+
+.meteorbox .meteoritem.style1 {
+    width: 50px;
+    height: 10px;
+    background-position: 0 0
+}
+
+.meteorbox .meteoritem.style2 {
+    width: 75px;
+    height: 15px;
+    background-position: 0 -10px
+}
+
+.meteorbox .meteoritem.style3 {
+    width: 100px;
+    height: 20px;
+    background-position: 0 -25px
+}
+
+.meteorbox .meteoritem.style4 {
+    width: 125px;
+    height: 25px;
+    background-position: 0 -44px
+}
+
+@-webkit-keyframes star {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.5)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(1)
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0.5)
+    }
+}
+
+@-webkit-keyframes meteor {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotate(40deg) translateX(0px) scale(0.2)
+    }
+
+    20% {
+        opacity: .7
+    }
+
+    80% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: rotate(40deg) translateX(300px) scale(1)
+    }
+}
